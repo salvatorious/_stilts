@@ -23,12 +23,14 @@ get_header('off-canvas'); ?>
 	
 <?php get_sidebar(); ?>
 <script type="text/javascript">
-jQuery(document).ready(function() {
+var $j = jQuery.noConflict();
+
+$j(document).ready(function() {
 	
 	window.scrollTo(0, 1);
 	
-	jQuery('.page-template-page-off-canvas-php .menu-toggle').click(function (e) {
-		jQuery('body').toggleClass('active');
+	$j('.page-template-page-off-canvas-php .menu-toggle').click(function (e) {
+		$j('body').toggleClass('active');
 		e.preventDefault();
     });
     
