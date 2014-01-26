@@ -14,9 +14,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<?php if ( is_page('off-canvas')) : ?>
-	<?php wp_enqueue_script('jquery-off-canvas', get_stylesheet_directory_uri() . '/js/page-off-canvas.js')); ?> 
-<?php endif; ?>
+
 <?php wp_head(); ?>
 </head>
 
