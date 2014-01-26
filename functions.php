@@ -43,6 +43,7 @@ function _stilts_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', '_stilts' ),
+    'footer'  => __( 'Footer Menu', '_stilts'),
 	) );
 
 	// Enable support for Post Formats.
@@ -72,6 +73,22 @@ function _stilts_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+    'name'          => __( 'Home Full-Width', 'rca_s' ),
+    'id'            => 'sidebar-2',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h1 class="widget-title">',
+    'after_title'   => '</h1>',
+  ) );
+  register_sidebar( array(
+    'name'          => __( 'Home 3-Column', 'rca_s' ),
+    'id'            => 'sidebar-3',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h1 class="widget-title">',
+    'after_title'   => '</h1>',
+  ) );
 }
 add_action( 'widgets_init', '_stilts_widgets_init' );
 

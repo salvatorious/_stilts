@@ -408,6 +408,11 @@ a:active {
 	float: left;
 	width: 100%;
 }
+.nav-menu {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: space-between;
+}
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
@@ -416,6 +421,9 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	background: yellow;
+	padding: 12px 24px;
+	margin: 0 24px;
 }
 .main-navigation a {
 	display: block;
@@ -604,6 +612,12 @@ object {
 	display: none;
 }
 
+/* Home Page content widgets */
+.homeWidget {
+	-webkit-columns: 250px 3;
+	-webkit-column-gap: 3em;
+
+}
 
 /* =Infinite Scroll
 ----------------------------------------------- */
