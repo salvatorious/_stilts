@@ -4,7 +4,7 @@
  *
  * Description: The template for displaying the front page.
  *
- * @package rca_s
+ * @package _stilts
  */
 
 get_header(); ?>
