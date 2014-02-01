@@ -12,6 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
+			<nav id="site-footer-navigation" class="footer-navigation" role="navigation">
+      <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'menu-footer') ); ?>
+	    </nav> <!-- .footer-navigation -->
 			<?php do_action( '_stilts_credits' ); ?>
 			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', '_stilts' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
