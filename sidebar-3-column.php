@@ -5,7 +5,7 @@
  * @package rca_s
  */
 ?>
-  <div id="secondary" class="widget-area homeWidgetColumns" role="complementary">
+  <div id="secondary" class="widget-area threeWidgetColumns" role="complementary">
     <?php do_action( 'before_sidebar' ); ?>
     <?php if ( ! dynamic_sidebar( 'sidebar-3' ) ) : ?>
 
